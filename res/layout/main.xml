@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:gravity="center"
-    android:orientation="vertical" >
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="top|center"
+	android:orientation="vertical"
+	android:background="#FFFFFF">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/res_input"
+		android:textSize="20sp"
+		android:layout_margin="10dp"
+		android:textColor="#4E4E4E"/>
+
+	<EditText
+		android:id="@+id/editdpi"
+		android:layout_height="wrap_content"
+		android:inputType="number"
+		android:ems="10"
+		android:layout_width="wrap_content"
+		android:textColor="#000000"
+		android:textCursorDrawable="@null">
+
+		<requestFocus/>
+
+	</EditText>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="@string/description"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:layout_margin="10dp"
+		android:textColor="#A2A2A2"/>
 
 </LinearLayout>
+
